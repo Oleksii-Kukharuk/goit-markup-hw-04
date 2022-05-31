@@ -118,7 +118,16 @@ ul {
 
 /* -----------------------------------------------Hero */
 .hero {
+  background-image: url(../images/img-overlay.png),
+    url(../images/hero-image.jpg);
   background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+
   padding: 200px 0;
   text-align: center;
 }
@@ -174,6 +183,7 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -190,6 +200,33 @@ ul {
 
 .features-item {
   width: 270px;
+}
+
+.features-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: ;
+}
+
+.icon-anthena::before {
+  background-image: url(../images/anthena.png);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.png);
+}
+
+.icon-diagrama::before {
+  background-image: url(../images/diagram.png);
+}
+
+.icon-astronaut:before {
+  background-image: url(../images/astronaut.png);
 }
 
 .featers-item:not(:last-child) {
