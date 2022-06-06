@@ -393,8 +393,6 @@ ul {
 .customer-logo {
   height: 92px;
   width: 170px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .customer-logo:not(:last-child) {
@@ -406,6 +404,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .customer-logo-icon {
@@ -421,8 +421,8 @@ ul {
 .customer-link:focus .customer-logo-icon {
   fill: var(--accent-color);
 }
-.customer-logo:hover,
-.customer-logo:focus {
+.customer-link:hover,
+.customer-link:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
